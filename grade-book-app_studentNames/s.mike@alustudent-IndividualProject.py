@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-#!/usr/bin/env python3
 import json
 
 class Student:
@@ -68,7 +67,7 @@ class GradeBook:
         names = input("Enter student names: ")
         new_student = Student(email, names)
         self.student_list.append(new_student)
-        print(f"🌟 Student {names} added successfully! 🌟")
+        print(f"  Student {names} added successfully! ")
 
     def add_course(self):
         name = input("Enter course name: ")
@@ -76,7 +75,7 @@ class GradeBook:
         credits = int(input("Enter course credits: "))
         new_course = Course(name, trimester, credits)
         self.course_list.append(new_course)
-        print(f"🌸 Course {name} added successfully! 🌸")
+        print(f"  Course {name} added successfully!  ")
 
     def register_student_for_course(self):
         student_email = input("Enter student email: ")
@@ -87,7 +86,7 @@ class GradeBook:
 
         if student and course:
             student.register_for_course(course)
-            print(f"✨ Student {student.names} registered for course {course.name} successfully! ✨")
+            print(f"  Student {student.names} registered for course {course.name} successfully!  ")
         else:
             print("Student or course not found.")
 
@@ -117,7 +116,7 @@ class GradeBook:
         student_email = input("Enter student email: ")
         student = next((s for s in self.student_list if s.email == student_email), None)
         if student:
-            print(f"\n🌺 Transcript for {student.names}: 🌺")
+            print(f"\n  Transcript for {student.names}: ")
             for course in student.courses_registered:
                 print(f"Course: {course.name}, Trimester: {course.trimester}, Credits: {course.credits}")
             print(f"GPA: {student.GPA:.2f}\n")
@@ -131,7 +130,7 @@ class GradeBook:
         }
         with open(filename, "w") as f:
             json.dump(data, f, indent=4)
-        print("🌟 Data saved successfully! 🌟")
+        print("  Data saved successfully!  ")
 
     def load_from_file(self, filename="gradebook.json"):
         try:
@@ -139,7 +138,7 @@ class GradeBook:
                 data = json.load(f)
             self.course_list = [Course.from_dict(c) for c in data["courses"]]
             self.student_list = [Student.from_dict(s, self.course_list) for s in data["students"]]
-            print("🌟 Data loaded successfully! 🌟")
+            print("  Data loaded successfully!  ")
         except FileNotFoundError:
             print("No saved data found.")
 

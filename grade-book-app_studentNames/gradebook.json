@@ -1,0 +1,17 @@
+{
+    "students": [
+        {
+            "email": "s.mike@alustudent.com",
+            "names": "SHYAKA Mike ",
+            "courses_registered": [],
+            "GPA": 0.0
+        }
+    ],
+    "courses": [
+        {
+            "name": "Maths",
+            "trimester": "Fall 2024 ",
+            "credits": 3
+        }
+    ]
+}
