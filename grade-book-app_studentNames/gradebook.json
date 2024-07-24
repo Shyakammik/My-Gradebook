@@ -3,6 +3,66 @@
         {
             "email": "s.mike@alustudent.com",
             "names": "SHYAKA Mike ",
+            "courses_registered": [
+                "BSE"
+            ],
+            "GPA": 4.0
+        },
+        {
+            "email": "MIKE@",
+            "names": "MIKE",
+            "courses_registered": [
+                "BSE"
+            ],
+            "GPA": 4.0
+        },
+        {
+            "email": "shyaka@",
+            "names": "SHYAKA M",
+            "courses_registered": [
+                "BSE"
+            ],
+            "GPA": 4.0
+        },
+        {
+            "email": "shyakam@alustudent.com",
+            "names": "SHYAKA Mark ",
+            "courses_registered": [],
+            "GPA": 0.0
+        },
+        {
+            "email": "mikes@alustudent.com",
+            "names": "MIKE SYAKA ",
+            "courses_registered": [],
+            "GPA": 0.0
+        },
+        {
+            "email": "mikes@alustudent.com",
+            "names": "MIKE Syaka",
+            "courses_registered": [],
+            "GPA": 0.0
+        },
+        {
+            "email": "s.mike@alustudent.com",
+            "names": "SHYAKA Mike ",
+            "courses_registered": [],
+            "GPA": 0.0
+        },
+        {
+            "email": "shyakamik@alustudent.com",
+            "names": "S M",
+            "courses_registered": [],
+            "GPA": 0.0
+        },
+        {
+            "email": "s.mike@alustudent.com",
+            "names": "SHYAKA Mike ",
+            "courses_registered": [],
+            "GPA": 0.0
+        },
+        {
+            "email": "manzi@alustudent.com",
+            "names": "Manzi",
             "courses_registered": [],
             "GPA": 0.0
         }
@@ -12,6 +72,36 @@
             "name": "Maths",
             "trimester": "Fall 2024 ",
             "credits": 3
+        },
+        {
+            "name": "BSE",
+            "trimester": "spring 2024 ",
+            "credits": 4
+        },
+        {
+            "name": "Maths ",
+            "trimester": "Fall 2024",
+            "credits": 57
+        },
+        {
+            "name": "BSE",
+            "trimester": "Fall 2024",
+            "credits": 3
+        },
+        {
+            "name": "BSE",
+            "trimester": "Fall 2024",
+            "credits": 3
+        },
+        {
+            "name": "BSE",
+            "trimester": "Fall 2024",
+            "credits": 20
+        },
+        {
+            "name": "BSE",
+            "trimester": "Fall 2024",
+            "credits": 10
         }
     ]
 }

@@ -10,12 +10,18 @@ class Student:
         self.GPA = 0.0
 
     def calculate_GPA(self):
-        if not self.courses_registered:
-            self.GPA = 0.0
+        sum_grades = 0
+        sum_credits = 0
+
+        for course, grade in self.courses_registered.items():
+            sum_grades += (4 * grade) / course.credits
+            sum_credits += 1
+
+        if sum_credits != 0:
+            self.GPA  = sum_grades / sum_credits
+
         else:
-            total_credits = sum(course.credits for course in self.courses_registered)
-            total_points = sum(course.credits * self.get_grade_point(course) for course in self.courses_registered)
-            self.GPA = total_points / total_credits
+            self.GPA = 0.0
 
     def register_for_course(self, course):
         self.courses_registered.append(course)
