@@ -1,0 +1,12 @@
+[
+    {
+        "email": "smike@gmail.com",
+        "course_name": "Comp",
+        "grade": "A"
+    },
+    {
+        "email": "Shyaka@gmail.com",
+        "course_name": "Comp",
+        "grade": "A"
+    }
+]
